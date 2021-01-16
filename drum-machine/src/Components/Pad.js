@@ -25,22 +25,13 @@ export default class Pad extends Component {
         });
     }
 
-//     <div id="editFields0" style={{'display':'none'}}>
-//     <label htmlFor="audio-file-1" class="custom-file-upload">
-//         <IoIosAddCircle /> Choose audio file
-//     </label>
-//     <br /><br />
-//     <input id="audio-file-1" type="file"/>
-//     <audio controls loop id="audio1" type="audio/mpeg-3" src={soundfile1} >
-//     </audio>
-// </div>
-
-
     render() {
         let textColor = this.state.isPlaying ? "text-warning" : "text-secondary";
         return (
-            <div class="col-4 bg-primary" onClick={this.showEditFields}>
-                <h1 class={textColor}>Pad {this.props.ID}</h1>
+            <div class="col-4 p-1">
+                <div class="bg-white rounded shadow">
+                    <h1 class="display-1 text-success justify-content-center align-items-center">Pad {this.props.ID + 1}</h1>
+                </div>
             </div>
         )
     }
